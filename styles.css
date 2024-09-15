@@ -1,0 +1,109 @@
+/* Ensure body and html allow scrolling */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  scroll-behavior: smooth; /* Smooth scrolling effect */
+}
+
+/* Ensure sections take up auto height and can scroll */
+section {
+  padding: 2rem 0;
+  width: 100%;
+}
+
+/* Cover Section */
+.cover {
+  text-align: center;
+  padding: 5rem 0;
+  background: url('cover.jpg') no-repeat center center/cover;
+  color: white;
+  min-height: 60vh; /* Set minimum height to allow scrolling */
+}
+
+/* Footer fix for responsive scroll */
+footer {
+  background-color: #333;
+  padding: 2rem;
+  color: #b4b4b4;
+  text-align: center;
+  width: 100%;
+  bottom: 0;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+footer ul li {
+  display: inline;
+}
+
+footer ul li a {
+  color: #111111be;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+footer ul li i {
+  margin-right: 0.5rem;
+}
+
+/* Navigation Bar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #111111be;
+  width: 100%;
+  position: sticky; /* Sticky navigation bar */
+  top: 0;
+  z-index: 1000; /* Ensure it stays on top */
+}
+
+.logo a {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #b4b4b4;
+  text-decoration: none;
+}
+
+.nav-links {
+  list-style-type: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+}
+
+.nav-links li {
+  display: inline-block;
+}
+
+.nav-links a {
+  color: #b4b4b4;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  color: #339dff;
+}
+
+.nav-links i {
+  font-size: 1.2rem;
+}
+
+.element {
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
